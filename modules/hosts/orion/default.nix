@@ -15,7 +15,6 @@ in
 
       nixos.bluetooth
       nixos.boot
-      nixos.display3d
       nixos.ghostty
       nixos.hyfetch
       nixos.locale
@@ -46,8 +45,8 @@ in
 
       users.puppy = { ... }: {
         imports = [
+          homeManager.blahaj
           homeManager.btop
-          homeManager.display3d
           homeManager.firefox
           homeManager.ghostty
           homeManager.helix
