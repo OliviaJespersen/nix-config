@@ -20,13 +20,14 @@
         };
         wallpaper = {
           enabled = true;
-          default.path = "~/Wallpapers/wallpaper.jpg";
+          directory = "~/nix-config/wallpapers";
+          default.path = "~/nix-config/wallpapers/lain.jpg";
         };
         bar.default = {
           margin_ends = 0;
           scale = 1.2;
           radius = 0;
-          start = ["launcher" "workspaces"];
+          start = ["launcher" "wallpaper" "workspaces"];
           center = ["clock"];
           end = ["network" "volume" "battery" "control-center" "session"];
         };
