@@ -9,15 +9,9 @@
       upower.enable = true;
       greetd = {
         enable = true;
-        settings = {
-          initial_session = {
-            command = "mango";
-            user = "puppy";
-          };
-          default_session = {
-            command = "${pkgs.tuigreet}/bin/tuigreet --cmd mango";
-            user = "greeter";
-          };
+        settings.default_session = {
+          command = "${pkgs.tuigreet}/bin/tuigreet --cmd mango";
+          user = "greeter";
         };
       };
     };
