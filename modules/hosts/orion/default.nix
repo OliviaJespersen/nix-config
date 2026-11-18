@@ -16,6 +16,7 @@ in
       nixos.bluetooth
       nixos.boot
       nixos.hyfetch
+      nixos.ghostty
       nixos.locale
       nixos.mango
       nixos.networking
