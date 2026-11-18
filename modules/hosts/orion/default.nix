@@ -35,7 +35,10 @@ in
 
     users.users.puppy = {
       isNormalUser = true;
-      extraGroups = [ "wheel" ];
+      extraGroups = [
+        "wheel"
+        "networkmanager"
+      ];
     };
 
     home-manager = {
