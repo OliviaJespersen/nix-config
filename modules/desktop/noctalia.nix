@@ -9,13 +9,12 @@
       settings = {
         theme = {
           source = "builtin";
-          builtin = "Catppuccin";
+          builtin = "Rosé Pine";
           mode = "dark";
           templates = {
             enable_builtin_templates = true;
             builtin_ids = [
               "btop"
-              "ghostty"
               "helix"
               "mango"
             ];

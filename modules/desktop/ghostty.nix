@@ -8,7 +8,10 @@
   flake.modules.homeManager.ghostty = { ... }: {
     programs.ghostty = {
       enable = true;
-      settings.background-opacity = "0.80";
+      settings = {
+        theme = "Rose Pine";
+        background-opacity = "0.80";
+      };
     };
   };
 }
