@@ -48,6 +48,7 @@ in
 
       users.puppy = { ... }: {
         imports = [
+          homeManager.bitwarden
           homeManager.blahaj
           homeManager.btop
           homeManager.firefox

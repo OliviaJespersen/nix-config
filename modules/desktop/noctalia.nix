@@ -35,6 +35,18 @@
           network.show_label = false;
           volume.show_label = false;
         };
+        plugins = {
+          enabled = [
+            "noctalia/bitwarden"
+          ];
+          source = {
+            name = "official";
+            kind = "git";
+            location = "https://github.com/noctalia-dev/official-plugins";
+            enable = true;
+          };
+        };
+        plugin_settings."noctalia/bitwarden".hide_actions_when_searching = true;
       };
     };
   };
