@@ -1,5 +1,19 @@
 { ... }: {
-  flake.modules.homeManager.firefox = { ... }: {
+  flake.modules.homeManager.firefox = { pkgs, ... }:
+  let
+    rosePine = pkgs.fetchFromGitHub {
+      owner = "rose-pine";
+      repo = "firefox";
+      rev = "efc1896fb77b5e6984e15338659c1c7a23af2fa3";
+      hash = "sha256-5QOVoAWYI7qZGaf62Yv+8saJw/Iv8GMK2sJl2xd+JNo=";
+    };
+  in
+  {
+    home.file.".mozialla/firefox/default/chrome" = {
+      source = "${rosePine}/dist";
+      recursive = true;
+    };
+
     programs.firefox = {
       enable = true;
       configPath = ".mozialla/firefox";
@@ -18,6 +32,7 @@
       profiles.default.settings = {
         "sidebar.main.tools" = [];
         "sidebar.verticalTabs" = true;
+        "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
       };
     };
   };
