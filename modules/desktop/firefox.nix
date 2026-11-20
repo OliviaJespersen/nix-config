@@ -1,5 +1,14 @@
-{ ... }: {
+{ inputs, ... }: {
   flake.modules.homeManager.firefox = { config, ... }: {
+    imports = [
+      inputs.textfox.homeManagerModules.default
+    ];
+
+    textfox = {
+      enable = true;
+      profiles = [ "default" ];
+    };
+
     programs.firefox = {
       enable = true;
       configPath = "${config.xdg.configHome}/mozilla/firefox";

@@ -188,7 +188,8 @@
         "import-tree": "import-tree",
         "mangowm": "mangowm",
         "nixpkgs": "nixpkgs",
-        "noctalia": "noctalia"
+        "noctalia": "noctalia",
+        "textfox": "textfox"
       }
     },
     "scenefx": {
@@ -226,6 +227,26 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default-linux",
+        "type": "github"
+      }
+    },
+    "textfox": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1792753173,
+        "narHash": "sha256-qZWH9X+xieUoJlpv7GJK3u1uu6Xmz33W4LOgjCM+aJg=",
+        "owner": "adriankarlen",
+        "repo": "textfox",
+        "rev": "79f83918e21b4f310b7de811ae12757eab6a561d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "adriankarlen",
+        "repo": "textfox",
         "type": "github"
       }
     }
