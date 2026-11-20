@@ -9,14 +9,14 @@
     };
   in
   {
-    home.file.".mozialla/firefox/default/chrome" = {
+    home.file.".mozilla/firefox/default/chrome" = {
       source = "${rosePine}/dist";
       recursive = true;
     };
 
     programs.firefox = {
       enable = true;
-      configPath = ".mozialla/firefox";
+      configPath = ".mozilla/firefox";
       policies = {
         DisableFirefoxAccounts = true;
         Homepage.StartPage = "previous-session";
