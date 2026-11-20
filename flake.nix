@@ -22,11 +22,6 @@
       url = "github:noctalia-dev/noctalia";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    display3d-src = {
-      url = "github:renpenguin/display3d";
-      flake = false;
-    };    
   };
 
   outputs = inputs:

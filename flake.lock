@@ -1,21 +1,5 @@
 {
   "nodes": {
-    "display3d-src": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1789568466,
-        "narHash": "sha256-Gmf3X13rCwypulwXfVOwXvtny9HVK9jW035kVLqSoMk=",
-        "owner": "renpenguin",
-        "repo": "display3d",
-        "rev": "642764a87bf4f20628d3d6416d8d94f74e44a431",
-        "type": "github"
-      },
-      "original": {
-        "owner": "renpenguin",
-        "repo": "display3d",
-        "type": "github"
-      }
-    },
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": "nixpkgs-lib"
@@ -199,7 +183,6 @@
     },
     "root": {
       "inputs": {
-        "display3d-src": "display3d-src",
         "flake-parts": "flake-parts",
         "home-manager": "home-manager",
         "import-tree": "import-tree",
