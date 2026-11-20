@@ -30,8 +30,7 @@
         };
       };
       profiles.default.settings = {
-        "extensions.activeThemeID" = "firefox-compact-dark@mozilla.org";
-        "layout.css.prefers-color-scheme.content-override" = 0; # Dark
+        "ui.systemUsesDarkTheme" = 1;
         "sidebar.main.tools" = [];
         "sidebar.verticalTabs" = true;
         "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
