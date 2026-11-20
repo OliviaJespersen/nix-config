@@ -1,8 +1,8 @@
 { ... }: {
-  flake.modules.homeManager.firefox = { ... }: {
+  flake.modules.homeManager.firefox = { config, ... }: {
     programs.firefox = {
       enable = true;
-      configPath = ".mozilla/firefox";
+      configPath = "${config.xdg.configHome}/mozilla/firefox";
       policies = {
         DisableFirefoxAccounts = true;
         Homepage.StartPage = "previous-session";
@@ -16,6 +16,7 @@
         };
       };
       profiles.default.settings = {
+        "ui.systemUsesDarkTheme" = 1;
         "sidebar.main.tools" = [];
         "sidebar.verticalTabs" = true;
       };
