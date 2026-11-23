@@ -1,9 +1,13 @@
-{ ... }: {
+{ inputs, ... }: {
   flake.modules.nixos.umbriel = { ... }: {
+    imports = [ inputs.umbriel.nixosModules.default ];
+
     programs.umbriel.enable = true;
   };
 
   flake.modules.homeManager.umbriel = { ... }: {
+    imports = [ inputs.umbriel.homeModules.default ];
+
     programs.umbriel.settings = {
       general.autostart = [ "noctalia" ];
       layout.gap = 5;
