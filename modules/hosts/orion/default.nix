@@ -17,6 +17,7 @@ in
       nixos.cursor
       nixos.hyfetch
       nixos.ghostty
+      nixos.git
       nixos.locale
       nixos.maple-mono
       nixos.nix
