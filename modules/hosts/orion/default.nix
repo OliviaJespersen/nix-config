@@ -24,6 +24,7 @@ in
       nixos.networking
       nixos.nix
       nixos.noctalia-greeter
+      nixos.umbriel
 
       inputs.home-manager.nixosModules.home-manager
     ];
@@ -63,6 +64,7 @@ in
           homeManager.hyfetch
           homeManager.mango
           homeManager.noctalia
+          homeManager.umbriel
           homeManager.yazi
         ];
 
