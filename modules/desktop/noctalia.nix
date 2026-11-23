@@ -16,11 +16,7 @@
     programs.noctalia = {
       enable = true;
       settings = {
-        shell = {
-          font_family = "Maple Mono NF";
-          greeter_sync.auto_sync = true;
-        };
-        hooks.started = "noctalia msg greeter-sync";
+        shell.font_family = "Maple Mono NF";
         theme = {
           source = "builtin";
           builtin = "Rosé Pine";
