@@ -36,12 +36,12 @@
           "Mod+Q" = "window-close";
           "Mod+T" = "spawn ghostty";
 
-          "Mod+M" = "window-toggle-maximize-to-edges";
-          "Mod+F" = "window-toggle-fullscreen";
-          "Mod+Ctrl+F" = "window-toggle-maximize";
+          "Mod+M" = "window-toggle-maximize";
 
           "Mod+Comma" = "window-consume-left";
           "Mod+Period" = "window-consume-right";
+          "Mod+Ctrl+Comma" = "window-consume-from-left";
+          "Mod+Ctrl+Period" = "window-consume-from-right";
 
           "Mod+1" = "workspace-switch 1";
           "Mod+2" = "workspace-switch 2";
