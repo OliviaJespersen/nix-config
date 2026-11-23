@@ -52,6 +52,7 @@ in
           homeManager.bitwarden
           homeManager.blahaj
           homeManager.btop
+          homeManager.cursor
           homeManager.firefox
           homeManager.ghostty
           homeManager.helix
