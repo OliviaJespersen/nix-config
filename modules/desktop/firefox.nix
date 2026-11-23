@@ -36,6 +36,9 @@
       };
       profiles.default.settings = {
         "ui.systemUsesDarkTheme" = 1;
+        "browser.newtabpage.activity-stream.showWeather" = false;
+        "browser.newtabpage.activity-stream.feeds.topsites" = false;
+        "browser.urlbar.scotchBonnet.enableOverride" = false;
       };
     };
   };
