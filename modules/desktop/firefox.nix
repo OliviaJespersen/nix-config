@@ -7,6 +7,10 @@
     textfox = {
       enable = true;
       profiles = [ "default" ];
+      config = {
+        displaySidebarTools = false;
+        tabs.vertical.enable = true;
+      };
     };
 
     programs.firefox = {
@@ -26,8 +30,6 @@
       };
       profiles.default.settings = {
         "ui.systemUsesDarkTheme" = 1;
-        "sidebar.main.tools" = [];
-        "sidebar.verticalTabs" = true;
       };
     };
   };
