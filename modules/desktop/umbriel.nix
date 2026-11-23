@@ -13,7 +13,7 @@
       settings = {
         general= {
           autostart = [ "noctalia" ];
-          show_cheatsheet;
+          show_cheatsheet = false;
         };
         include.optional.files = [ "${config.xdg.configHome}/umbriel/noctalia.toml" ];
         layout = {
