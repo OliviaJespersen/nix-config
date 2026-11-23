@@ -5,13 +5,14 @@
     programs.umbriel.enable = true;
   };
 
-  flake.modules.homeManager.umbriel = { ... }: {
+  flake.modules.homeManager.umbriel = { config, ... }: {
     imports = [ inputs.umbriel.homeModules.default ];
 
     programs.umbriel = {
       enable = true;
       settings = {
         general.autostart = [ "noctalia" ];
+        include.optional.files = [ "${config.xdg.configHome}/umbriel/noctalia.toml" ];
         layout.gap = 5;
         input.keyboard.layout = "dk";
         keybinds = {

@@ -16,6 +16,7 @@
             enable_builtin_templates = true;
             builtin_ids = [
               "mango"
+              "umbriel"
             ];
           };
         };
