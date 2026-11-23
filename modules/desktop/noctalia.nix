@@ -20,6 +20,7 @@
           font_family = "Maple Mono NF";
           greeter_sync.auto_sync = true;
         };
+        hooks.started = "noctalia msg greeter-sync";
         theme = {
           source = "builtin";
           builtin = "Rosé Pine";
