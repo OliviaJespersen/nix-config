@@ -9,7 +9,7 @@ in
     ];
   };
 
-  flake.modules.nixos.orion = { pkgs, ... }: {
+  flake.modules.nixos.orion = { ... }: {
     imports = [
       ./_hardware.nix
 
