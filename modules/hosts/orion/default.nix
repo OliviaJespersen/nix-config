@@ -57,7 +57,6 @@ in
           homeManager.helix
           homeManager.hyfetch
           homeManager.mango
-          homeManager.maple-mono
           homeManager.noctalia
         ];
 

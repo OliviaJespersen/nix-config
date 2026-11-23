@@ -7,6 +7,7 @@
     programs.noctalia = {
       enable = true;
       settings = {
+        shell.font_family = "Maple Mono NF";
         theme = {
           source = "builtin";
           builtin = "Rosé Pine";

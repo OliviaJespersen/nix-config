@@ -9,6 +9,7 @@
       profiles = [ "default" ];
       config = {
         displaySidebarTools = false;
+        font.family = "Maple Mono NF";
         tabs.vertical.enable = true;
       };
     };

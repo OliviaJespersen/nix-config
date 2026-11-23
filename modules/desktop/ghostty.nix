@@ -7,6 +7,7 @@
     programs.ghostty = {
       enable = true;
       settings = {
+        font-family = "Maple Mono NF";
         theme = "Rose Pine";
         background-opacity = "0.80";
       };
