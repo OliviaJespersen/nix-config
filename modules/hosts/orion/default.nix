@@ -9,7 +9,7 @@ in
     ];
   };
 
-  flake.modules.nixos.orion = { ... }: {
+  flake.modules.nixos.orion = { pkgs, ... }: {
     imports = [
       ./_hardware.nix
 
@@ -36,6 +36,8 @@ in
     networking.hostName = "orion";
 
     nixpkgs.hostPlatform = "x86_64-linux";
+
+    programs.bash.shellAliases.rebuild = "git pull origin main && sudo nixos-rebuild switch --flake .#orion";
 
     users.users.puppy = {
       isNormalUser = true;
