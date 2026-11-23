@@ -19,6 +19,7 @@ in
       nixos.ghostty
       nixos.locale
       nixos.mango
+      nixos.maple-mono
       nixos.networking
       nixos.nix
       
@@ -56,6 +57,7 @@ in
           homeManager.helix
           homeManager.hyfetch
           homeManager.mango
+          homeManager.maple-mono
           homeManager.noctalia
         ];
 
