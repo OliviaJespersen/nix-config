@@ -58,6 +58,7 @@ in
           homeManager.hyfetch
           homeManager.mango
           homeManager.noctalia
+          homeManager.yazi
         ];
 
         home = {
