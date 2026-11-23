@@ -15,6 +15,7 @@ in
 
       nixos.bluetooth
       nixos.boot
+      nixos.cursor
       nixos.hyfetch
       nixos.ghostty
       nixos.locale
