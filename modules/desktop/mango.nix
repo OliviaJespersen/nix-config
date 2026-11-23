@@ -1,19 +1,14 @@
 { inputs, ... }: {
-  flake.modules.nixos.mango = { pkgs, ... }: {
+  flake.modules.nixos.mango = { ... }: {
     imports = [
       inputs.mangowm.nixosModules.mango
     ];
 
+    programs.mango.enable = true;
+
     services = {
       power-profiles-daemon.enable = true;
       upower.enable = true;
-      greetd = {
-        enable = true;
-        settings.default_session = {
-          command = "${pkgs.tuigreet}/bin/tuigreet --cmd mango";
-          user = "greeter";
-        };
-      };
     };
   };
   

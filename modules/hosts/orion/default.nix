@@ -23,7 +23,8 @@ in
       nixos.maple-mono
       nixos.networking
       nixos.nix
-      
+      nixos.noctalia-greeter
+
       inputs.home-manager.nixosModules.home-manager
     ];
 
