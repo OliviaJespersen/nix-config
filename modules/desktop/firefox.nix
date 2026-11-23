@@ -27,6 +27,11 @@
             installation_mode = "force_installed";
             updates_disabled = true;
           };
+          "{6bbdb3f9-6bd5-4385-9087-e293ec8d21a4}" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/file/3847671/rose_pine-1.0.xpi";
+            installation_mode = "force_installed";
+            updates_disabled = true;
+          };
         };
       };
       profiles.default.settings = {
