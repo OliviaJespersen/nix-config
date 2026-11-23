@@ -23,7 +23,7 @@
         input = {
           keyboard.layout = "dk";
           touchpad.natural_scroll = true;
-        }
+        };
         keybinds = {
           "Mod+Left" = "window-focus-left";
           "Mod+Right" = "window-focus-right";
