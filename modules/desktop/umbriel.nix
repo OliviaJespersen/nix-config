@@ -11,14 +11,56 @@
     programs.umbriel = {
       enable = true;
       settings = {
-        general.autostart = [ "noctalia" ];
+        general= {
+          autostart = [ "noctalia" ];
+          show_cheatsheet;
+        };
         include.optional.files = [ "${config.xdg.configHome}/umbriel/noctalia.toml" ];
-        layout.gap = 5;
+        layout = {
+          gap = 5;
+          mode = "scrolling";
+        };
         input.keyboard.layout = "dk";
         keybinds = {
-          "Mod+Return" = "spawn ghostty";
+          "Mod+Left" = "window-focus-left";
+          "Mod+Right" = "window-focus-right";
+          "Mod+Up" = "window-focus-up";
+          "Mod+Down" = "window-focus-down";
+          
+          "Mod+Shift+Left" = "column-move-left";
+          "Mod+Shift+Right" = "column-move-right";
+          "Mod+Shift+Up" = "window-move-up";
+          "Mod+Shift+Down" = "window-move-down";
+
+          "Mod+Space" = "spawn noctalia msg panel-toggle launcher";
           "Mod+Q" = "window-close";
-          "Mod" = "spawn noctalia msg panel-toggle launcher";
+          "Mod+T" = "spawn ghostty";
+
+          "Mod+M" = "window-toggle-maximize-to-edges";
+          "Mod+F" = "window-toggle-fullscreen";
+          "Mod+Ctrl+F" = "window-toggle-maximize";
+
+          "Mod+Comma" = "window-consume-left";
+          "Mod+Period" = "window-consume-right";
+
+          "Mod+1" = "workspace-switch 1";
+          "Mod+2" = "workspace-switch 2";
+          "Mod+3" = "workspace-switch 3";
+          "Mod+4" = "workspace-switch 4";
+          "Mod+5" = "workspace-switch 5";
+          "Mod+6" = "workspace-switch 6";
+          "Mod+7" = "workspace-switch 7";
+          "Mod+8" = "workspace-switch 8";
+          "Mod+9" = "workspace-switch 9";
+          "Mod+Shift+1" = "window-move-to-workspace 1";
+          "Mod+Shift+2" = "window-move-to-workspace 2";
+          "Mod+Shift+3" = "window-move-to-workspace 3";
+          "Mod+Shift+4" = "window-move-to-workspace 4";
+          "Mod+Shift+5" = "window-move-to-workspace 5";
+          "Mod+Shift+6" = "window-move-to-workspace 6";
+          "Mod+Shift+7" = "window-move-to-workspace 7";
+          "Mod+Shift+8" = "window-move-to-workspace 8";
+          "Mod+Shift+9" = "window-move-to-workspace 9";
         };
       };
     };
