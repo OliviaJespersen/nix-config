@@ -20,7 +20,10 @@
           gap = 5;
           mode = "scrolling";
         };
-        input.keyboard.layout = "dk";
+        input = {
+          keyboard.layout = "dk";
+          touchpad.natural_scroll = true;
+        }
         keybinds = {
           "Mod+Left" = "window-focus-left";
           "Mod+Right" = "window-focus-right";
