@@ -14,7 +14,7 @@
         };
         cursor.size = 24;
         keyboard.layout = "dk";
-        session.default = "Mango";
+        session.default = "Umbriel";
       };
     };
   };

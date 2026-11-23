@@ -1,4 +1,13 @@
 { inputs, ... }: {
+  flake.modules.nixos.noctalia = { ... }: {
+    imports = [ inputs.noctalia.nixosModules.default ];
+
+    programs.noctalia = {
+      enable = true;
+      recommendedServices.enable = true;
+    };
+  };
+
   flake.modules.homeManager.noctalia = { ... }: {
     imports = [
       inputs.noctalia.homeModules.default
@@ -14,10 +23,7 @@
           mode = "dark";
           templates = {
             enable_builtin_templates = true;
-            builtin_ids = [
-              "mango"
-              "umbriel"
-            ];
+            builtin_ids = [ "umbriel" ];
           };
         };
         wallpaper = {

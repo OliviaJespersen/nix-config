@@ -13,16 +13,14 @@ in
     imports = [
       ./_hardware.nix
 
-      nixos.bluetooth
       nixos.boot
       nixos.cursor
       nixos.hyfetch
       nixos.ghostty
       nixos.locale
-      nixos.mango
       nixos.maple-mono
-      nixos.networking
       nixos.nix
+      nixos.noctalia
       nixos.noctalia-greeter
       nixos.umbriel
 
@@ -62,7 +60,6 @@ in
           homeManager.ghostty
           homeManager.helix
           homeManager.hyfetch
-          homeManager.mango
           homeManager.noctalia
           homeManager.umbriel
           homeManager.yazi
